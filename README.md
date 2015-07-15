@@ -1,4 +1,4 @@
-# auto-preload-rjscommon-deps
+# auto-preload-rjscommon-deps-loader
 
 Simple loader function that causes a source file using require.js' commonjs syntax to have it's deps hoisted to the outer scope, so that it behaves like it does in require.js.
 
