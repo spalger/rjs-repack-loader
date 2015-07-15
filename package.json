@@ -1,0 +1,21 @@
+{
+  "name": "auto-preload-rjscommon-deps",
+  "version": "1.0.0",
+  "description": "Preload commonjs deps in AMD require.js dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/spalger/amd-preload-commonjs-deps-loader.git"
+  },
+  "keywords": [
+    "webpack",
+    "loader",
+    "require.js",
+    "preload"
+  ],
+  "author": "Spencer Alger <email@spalger.com>",
+  "license": "Apache-2.0"
+}
