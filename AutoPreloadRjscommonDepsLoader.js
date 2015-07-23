@@ -22,16 +22,10 @@ module.exports = function (source) {
     return `require('${dep}');`;
   });
 
-  return `
-
+  return `${source}
 /* amd deps auto preloaded */
-
 ${deps.join('\n')}
-
-${source}
-
 /* /amd deps auto preloaded */
-
-`.trim();
+`;
 
 };
