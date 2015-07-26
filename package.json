@@ -17,5 +17,10 @@
     "preload"
   ],
   "author": "Spencer Alger <email@spalger.com>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "loader-utils": "^0.2.11",
+    "lodash.uniq": "^3.2.2",
+    "source-map": "^0.4.4"
+  }
 }
