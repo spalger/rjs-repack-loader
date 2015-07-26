@@ -1,6 +1,6 @@
 {
   "name": "auto-preload-rjscommon-deps-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Preload commonjs deps in AMD require.js dependencies",
   "main": "AutoPreloadRjscommonDepsLoader.js",
   "scripts": {
