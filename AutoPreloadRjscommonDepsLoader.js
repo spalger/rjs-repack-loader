@@ -5,6 +5,7 @@
 var uniq = require('lodash.uniq');
 var loaderUtils = require('loader-utils');
 var SourceNode = require('source-map').SourceNode;
+var SourceMapConsumer = require('source-map').SourceMapConsumer;
 
 var amdRequireRE = /define\(function\s*\(/;
 var commentRE = /(\/\*([\s\S]*?)\*\/|([^:]|^)\/\/(.*)$)/mg;
@@ -22,7 +23,7 @@ module.exports = function(content, map) {
   var sourceNode;
 
   if (map) {
-    sourceNode = SourceNode.fromSourceWithMap(content, map);
+    sourceNode = SourceNode.fromStringWithSourceMap(content, new SourceMapConsumer(map));
   } else {
     var fileName = loaderUtils.getRemainingRequest(this);
     sourceNode = new SourceNode(null, null, null);
