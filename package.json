@@ -1,14 +1,13 @@
 {
-  "name": "auto-preload-rjscommon-deps-loader",
+  "name": "rjs-repack-loader",
   "version": "1.0.4",
   "description": "Preload commonjs deps in AMD require.js dependencies",
-  "main": "AutoPreloadRjscommonDepsLoader.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com/spalger/amd-preload-commonjs-deps-loader.git"
+    "url": "git@github.com/spalger/rjs-repack-loader.git"
   },
   "keywords": [
     "webpack",
@@ -20,7 +19,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "loader-utils": "^0.2.11",
-    "lodash.uniq": "^3.2.2",
+    "lodash": "^3.10.1",
     "source-map": "^0.4.4"
   }
 }
