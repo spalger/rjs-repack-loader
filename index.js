@@ -2,7 +2,7 @@
 
 'use strict';
 
-var uniq = require('lodash.uniq');
+var uniq = require('lodash').uniq;
 var loaderUtils = require('loader-utils');
 var SourceNode = require('source-map').SourceNode;
 var SourceMapConsumer = require('source-map').SourceMapConsumer;
@@ -39,7 +39,7 @@ module.exports = function(content, map) {
   content
   .replace(commentRE, '')
   .replace(requireRE, function (match, dep) {
-    deps.push(`require('${ dep }');`);
+    deps.push('require(\'' + dep + '\');');
   });
 
   concatSrc.add([
